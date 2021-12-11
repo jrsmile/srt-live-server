@@ -296,7 +296,7 @@ void CSLSManager::get_stat_info(std::string &info_str)
             std::string worker_info;
     		worker->get_stat_info(worker_info);
             // add delimiter between JSON objects
-            if (it != m_workers.begin() && !worker_info.empty()) info_str += ',';
+            //if (it != m_workers.begin() && !worker_info.empty()) info_str += ',';
             info_str += worker_info;
     	}
     }
